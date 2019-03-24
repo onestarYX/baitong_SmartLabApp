@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49E2955C2247480C0045AFB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E2955B2247480C0045AFB1 /* AppDelegate.swift */; };
+		49E2955E2247480C0045AFB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E2955D2247480C0045AFB1 /* ViewController.swift */; };
+		49E295612247480C0045AFB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E2955F2247480C0045AFB1 /* Main.storyboard */; };
+		49E295632247480D0045AFB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E295622247480D0045AFB1 /* Assets.xcassets */; };
+		49E295662247480D0045AFB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E295642247480D0045AFB1 /* LaunchScreen.storyboard */; };
+		49E295712247480D0045AFB1 /* baitong_SmartLabAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E295702247480D0045AFB1 /* baitong_SmartLabAppTests.swift */; };
+		49E2957C2247480D0045AFB1 /* baitong_SmartLabAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E2957B2247480D0045AFB1 /* baitong_SmartLabAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49E2956D2247480D0045AFB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49E295502247480C0045AFB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49E295572247480C0045AFB1;
+			remoteInfo = baitong_SmartLabApp;
+		};
+		49E295782247480D0045AFB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49E295502247480C0045AFB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49E295572247480C0045AFB1;
+			remoteInfo = baitong_SmartLabApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		49E295582247480C0045AFB1 /* baitong_SmartLabApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baitong_SmartLabApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E2955B2247480C0045AFB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49E2955D2247480C0045AFB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49E295602247480C0045AFB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49E295622247480D0045AFB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49E295652247480D0045AFB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49E295672247480D0045AFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49E2956C2247480D0045AFB1 /* baitong_SmartLabAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = baitong_SmartLabAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E295702247480D0045AFB1 /* baitong_SmartLabAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baitong_SmartLabAppTests.swift; sourceTree = "<group>"; };
+		49E295722247480D0045AFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49E295772247480D0045AFB1 /* baitong_SmartLabAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = baitong_SmartLabAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E2957B2247480D0045AFB1 /* baitong_SmartLabAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baitong_SmartLabAppUITests.swift; sourceTree = "<group>"; };
+		49E2957D2247480D0045AFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49E295552247480C0045AFB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E295692247480D0045AFB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E295742247480D0045AFB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49E2954F2247480C0045AFB1 = {
+			isa = PBXGroup;
+			children = (
+				49E2955A2247480C0045AFB1 /* baitong_SmartLabApp */,
+				49E2956F2247480D0045AFB1 /* baitong_SmartLabAppTests */,
+				49E2957A2247480D0045AFB1 /* baitong_SmartLabAppUITests */,
+				49E295592247480C0045AFB1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49E295592247480C0045AFB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49E295582247480C0045AFB1 /* baitong_SmartLabApp.app */,
+				49E2956C2247480D0045AFB1 /* baitong_SmartLabAppTests.xctest */,
+				49E295772247480D0045AFB1 /* baitong_SmartLabAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49E2955A2247480C0045AFB1 /* baitong_SmartLabApp */ = {
+			isa = PBXGroup;
+			children = (
+				49E2955B2247480C0045AFB1 /* AppDelegate.swift */,
+				49E2955D2247480C0045AFB1 /* ViewController.swift */,
+				49E2955F2247480C0045AFB1 /* Main.storyboard */,
+				49E295622247480D0045AFB1 /* Assets.xcassets */,
+				49E295642247480D0045AFB1 /* LaunchScreen.storyboard */,
+				49E295672247480D0045AFB1 /* Info.plist */,
+			);
+			path = baitong_SmartLabApp;
+			sourceTree = "<group>";
+		};
+		49E2956F2247480D0045AFB1 /* baitong_SmartLabAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				49E295702247480D0045AFB1 /* baitong_SmartLabAppTests.swift */,
+				49E295722247480D0045AFB1 /* Info.plist */,
+			);
+			path = baitong_SmartLabAppTests;
+			sourceTree = "<group>";
+		};
+		49E2957A2247480D0045AFB1 /* baitong_SmartLabAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				49E2957B2247480D0045AFB1 /* baitong_SmartLabAppUITests.swift */,
+				49E2957D2247480D0045AFB1 /* Info.plist */,
+			);
+			path = baitong_SmartLabAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49E295572247480C0045AFB1 /* baitong_SmartLabApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49E295802247480D0045AFB1 /* Build configuration list for PBXNativeTarget "baitong_SmartLabApp" */;
+			buildPhases = (
+				49E295542247480C0045AFB1 /* Sources */,
+				49E295552247480C0045AFB1 /* Frameworks */,
+				49E295562247480C0045AFB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = baitong_SmartLabApp;
+			productName = baitong_SmartLabApp;
+			productReference = 49E295582247480C0045AFB1 /* baitong_SmartLabApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49E2956B2247480D0045AFB1 /* baitong_SmartLabAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49E295832247480D0045AFB1 /* Build configuration list for PBXNativeTarget "baitong_SmartLabAppTests" */;
+			buildPhases = (
+				49E295682247480D0045AFB1 /* Sources */,
+				49E295692247480D0045AFB1 /* Frameworks */,
+				49E2956A2247480D0045AFB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49E2956E2247480D0045AFB1 /* PBXTargetDependency */,
+			);
+			name = baitong_SmartLabAppTests;
+			productName = baitong_SmartLabAppTests;
+			productReference = 49E2956C2247480D0045AFB1 /* baitong_SmartLabAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		49E295762247480D0045AFB1 /* baitong_SmartLabAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49E295862247480D0045AFB1 /* Build configuration list for PBXNativeTarget "baitong_SmartLabAppUITests" */;
+			buildPhases = (
+				49E295732247480D0045AFB1 /* Sources */,
+				49E295742247480D0045AFB1 /* Frameworks */,
+				49E295752247480D0045AFB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49E295792247480D0045AFB1 /* PBXTargetDependency */,
+			);
+			name = baitong_SmartLabAppUITests;
+			productName = baitong_SmartLabAppUITests;
+			productReference = 49E295772247480D0045AFB1 /* baitong_SmartLabAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49E295502247480C0045AFB1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "wjfwyx@163.com";
+				TargetAttributes = {
+					49E295572247480C0045AFB1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					49E2956B2247480D0045AFB1 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 49E295572247480C0045AFB1;
+					};
+					49E295762247480D0045AFB1 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 49E295572247480C0045AFB1;
+					};
+				};
+			};
+			buildConfigurationList = 49E295532247480C0045AFB1 /* Build configuration list for PBXProject "baitong_SmartLabApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49E2954F2247480C0045AFB1;
+			productRefGroup = 49E295592247480C0045AFB1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49E295572247480C0045AFB1 /* baitong_SmartLabApp */,
+				49E2956B2247480D0045AFB1 /* baitong_SmartLabAppTests */,
+				49E295762247480D0045AFB1 /* baitong_SmartLabAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49E295562247480C0045AFB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E295662247480D0045AFB1 /* LaunchScreen.storyboard in Resources */,
+				49E295632247480D0045AFB1 /* Assets.xcassets in Resources */,
+				49E295612247480C0045AFB1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E2956A2247480D0045AFB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E295752247480D0045AFB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49E295542247480C0045AFB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E2955E2247480C0045AFB1 /* ViewController.swift in Sources */,
+				49E2955C2247480C0045AFB1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E295682247480D0045AFB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E295712247480D0045AFB1 /* baitong_SmartLabAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E295732247480D0045AFB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E2957C2247480D0045AFB1 /* baitong_SmartLabAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49E2956E2247480D0045AFB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49E295572247480C0045AFB1 /* baitong_SmartLabApp */;
+			targetProxy = 49E2956D2247480D0045AFB1 /* PBXContainerItemProxy */;
+		};
+		49E295792247480D0045AFB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49E295572247480C0045AFB1 /* baitong_SmartLabApp */;
+			targetProxy = 49E295782247480D0045AFB1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49E2955F2247480C0045AFB1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49E295602247480C0045AFB1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		49E295642247480D0045AFB1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49E295652247480D0045AFB1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49E2957E2247480D0045AFB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49E2957F2247480D0045AFB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49E295812247480D0045AFB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = baitong_SmartLabApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wjfwyx.baitong-SmartLabApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49E295822247480D0045AFB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = baitong_SmartLabApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wjfwyx.baitong-SmartLabApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		49E295842247480D0045AFB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = baitong_SmartLabAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wjfwyx.baitong-SmartLabAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/baitong_SmartLabApp.app/baitong_SmartLabApp";
+			};
+			name = Debug;
+		};
+		49E295852247480D0045AFB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = baitong_SmartLabAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wjfwyx.baitong-SmartLabAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/baitong_SmartLabApp.app/baitong_SmartLabApp";
+			};
+			name = Release;
+		};
+		49E295872247480D0045AFB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = baitong_SmartLabAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wjfwyx.baitong-SmartLabAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = baitong_SmartLabApp;
+			};
+			name = Debug;
+		};
+		49E295882247480D0045AFB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = baitong_SmartLabAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wjfwyx.baitong-SmartLabAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = baitong_SmartLabApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49E295532247480C0045AFB1 /* Build configuration list for PBXProject "baitong_SmartLabApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49E2957E2247480D0045AFB1 /* Debug */,
+				49E2957F2247480D0045AFB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49E295802247480D0045AFB1 /* Build configuration list for PBXNativeTarget "baitong_SmartLabApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49E295812247480D0045AFB1 /* Debug */,
+				49E295822247480D0045AFB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49E295832247480D0045AFB1 /* Build configuration list for PBXNativeTarget "baitong_SmartLabAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49E295842247480D0045AFB1 /* Debug */,
+				49E295852247480D0045AFB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49E295862247480D0045AFB1 /* Build configuration list for PBXNativeTarget "baitong_SmartLabAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49E295872247480D0045AFB1 /* Debug */,
+				49E295882247480D0045AFB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49E295502247480C0045AFB1 /* Project object */;
+}
