@@ -8,16 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    @IBAction func onLoginButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "loginToHome", sender: self)
+    }
+    
     @IBAction func onTap(_ sender: Any) {
         view.endEditing(true)
     }
+    
     
 }
 

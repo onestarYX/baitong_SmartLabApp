@@ -10,15 +10,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="baitong_SmartLabApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="baitong_SmartLabApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="智慧实验室" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D38-HC-hWa">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实验室管理系统" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D38-HC-hWa">
                                 <rect key="frame" x="85" y="80" width="244" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="244" id="2f7-US-Xep"/>
@@ -71,8 +71,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="4eM-mD-siy"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="登录"/>
+                                <connections>
+                                    <action selector="onLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Axr-7y-8QA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -98,47 +101,43 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
-                            <outletCollection property="gestureRecognizers" destination="zYk-2l-NwK" appends="YES" id="4R3-e4-roU"/>
+                            <outletCollection property="gestureRecognizers" destination="Cij-vQ-rC1" appends="YES" id="O0u-UH-xZf"/>
                         </connections>
                     </view>
+                    <connections>
+                        <segue destination="owG-Za-5wo" kind="presentation" identifier="loginToHome" id="13Q-iR-cym"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="zYk-2l-NwK">
+                <tapGestureRecognizer id="Cij-vQ-rC1">
                     <connections>
-                        <action selector="onTap:" destination="BYZ-38-t0r" id="OKc-DI-Rki"/>
+                        <action selector="onTap:" destination="BYZ-38-t0r" id="LdR-H8-gLP"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="133.69565217391306"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="Bdb-vA-sxa">
+        <!--个人中心-->
+        <scene sceneID="56A-Kt-MO5">
             <objects>
-                <tableViewController id="86O-JE-LJb" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="MpG-MN-BFN">
+                <viewController id="PTq-V7-mMa" customClass="HomeViewController" customModule="baitong_SmartLabApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QY4-UG-Raq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ZCm-H4-N4s">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZCm-H4-N4s" id="f40-K1-lSP">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="86O-JE-LJb" id="Wwb-XT-nee"/>
-                            <outlet property="delegate" destination="86O-JE-LJb" id="7dQ-Zg-eIS"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="DjO-kQ-gPp"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OtC-1W-NqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <viewLayoutGuide key="safeArea" id="RoM-R5-X5O"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="个人中心" id="yjE-2j-c1B">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="6ai-DP-7gT">
+                            <connections>
+                                <action selector="onLogout:" destination="PTq-V7-mMa" id="KEN-cp-Gl6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="77z-W8-bus" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1823" y="134"/>
+            <point key="canvasLocation" x="1807" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lgE-6E-8Po">
@@ -149,7 +148,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="86O-JE-LJb" kind="relationship" relationship="rootViewController" id="zgc-K7-CJP"/>
+                        <segue destination="PTq-V7-mMa" kind="relationship" relationship="rootViewController" id="vQv-35-68a"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SyO-XB-Gc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
