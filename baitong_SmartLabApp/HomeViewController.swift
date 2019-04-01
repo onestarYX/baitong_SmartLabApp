@@ -9,7 +9,7 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,5 +21,10 @@ class HomeViewController: UIViewController {
         
         self.dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func onTapCameraImg(_ sender: Any) {
+        self.performSegue(withIdentifier: "openCamera", sender: self)
+    }
+    
     
 }

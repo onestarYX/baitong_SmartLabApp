@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		497FA742224D8C3C00D162D8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497FA741224D8C3C00D162D8 /* HomeViewController.swift */; };
+		497FA74422517EC800D162D8 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497FA74322517EC800D162D8 /* CameraViewController.swift */; };
+		497FA746225190B100D162D8 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497FA745225190B100D162D8 /* WebViewController.swift */; };
 		49E2955C2247480C0045AFB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E2955B2247480C0045AFB1 /* AppDelegate.swift */; };
 		49E2955E2247480C0045AFB1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E2955D2247480C0045AFB1 /* LoginViewController.swift */; };
 		49E295612247480C0045AFB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E2955F2247480C0045AFB1 /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		497FA741224D8C3C00D162D8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		497FA74322517EC800D162D8 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		497FA745225190B100D162D8 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		49E295582247480C0045AFB1 /* baitong_SmartLabApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baitong_SmartLabApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E2955B2247480C0045AFB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49E2955D2247480C0045AFB1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 				49E295642247480D0045AFB1 /* LaunchScreen.storyboard */,
 				49E295672247480D0045AFB1 /* Info.plist */,
 				497FA741224D8C3C00D162D8 /* HomeViewController.swift */,
+				497FA74322517EC800D162D8 /* CameraViewController.swift */,
+				497FA745225190B100D162D8 /* WebViewController.swift */,
 			);
 			path = baitong_SmartLabApp;
 			sourceTree = "<group>";
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				49E2955E2247480C0045AFB1 /* LoginViewController.swift in Sources */,
+				497FA74422517EC800D162D8 /* CameraViewController.swift in Sources */,
 				49E2955C2247480C0045AFB1 /* AppDelegate.swift in Sources */,
+				497FA746225190B100D162D8 /* WebViewController.swift in Sources */,
 				497FA742224D8C3C00D162D8 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -124,6 +124,16 @@
                     <view key="view" contentMode="scaleToFill" id="QY4-UG-Raq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Icon-App-76x76" translatesAutoresizingMaskIntoConstraints="NO" id="nt8-J0-EOB">
+                                <rect key="frame" x="124" y="283" width="166" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="68r-It-dnO" appends="YES" id="CIt-HQ-1fT"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="RoM-R5-X5O"/>
                     </view>
@@ -134,10 +144,78 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="l1b-bl-DQO" kind="show" identifier="openCamera" id="sFB-uJ-3M8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="77z-W8-bus" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="68r-It-dnO">
+                    <connections>
+                        <action selector="onTapCameraImg:" destination="PTq-V7-mMa" id="vNV-eO-qAE"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1807" y="134"/>
+            <point key="canvasLocation" x="1805.7971014492755" y="133.69565217391306"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="kJ3-2U-Vno">
+            <objects>
+                <viewController id="l1b-bl-DQO" customClass="CameraViewController" customModule="baitong_SmartLabApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b7C-Ue-AMj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="loV-Ch-MtJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="loV-Ch-MtJ" firstAttribute="leading" secondItem="b7C-Ue-AMj" secondAttribute="leading" id="DcT-lE-gn0"/>
+                            <constraint firstItem="loV-Ch-MtJ" firstAttribute="centerY" secondItem="b7C-Ue-AMj" secondAttribute="centerY" id="T9K-iy-Aif"/>
+                            <constraint firstItem="loV-Ch-MtJ" firstAttribute="bottom" secondItem="JBv-TW-gum" secondAttribute="bottom" id="XxL-Yk-pde"/>
+                            <constraint firstItem="loV-Ch-MtJ" firstAttribute="centerX" secondItem="b7C-Ue-AMj" secondAttribute="centerX" id="khh-g5-pCs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JBv-TW-gum"/>
+                    </view>
+                    <connections>
+                        <outlet property="videoPreview" destination="loV-Ch-MtJ" id="2JW-eL-Exm"/>
+                        <segue destination="Fde-Nr-F3e" kind="show" identifier="openLink" id="snr-bl-ZTp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T6b-fb-ow1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2600" y="135.32608695652175"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="E6b-0m-tB5">
+            <objects>
+                <viewController id="Fde-Nr-F3e" customClass="WebViewController" customModule="baitong_SmartLabApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VBN-o4-R53">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dMG-3f-AVh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Yxp-lo-CmB"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="dMG-3f-AVh" id="z5T-qu-OLU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8xr-49-BsU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3434.7826086956525" y="133.69565217391306"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lgE-6E-8Po">
@@ -156,4 +234,7 @@
             <point key="canvasLocation" x="949" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Icon-App-76x76" width="76" height="76"/>
+    </resources>
 </document>
